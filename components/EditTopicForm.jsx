@@ -2,6 +2,7 @@
 import styles from './components.module.css'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import {apiUrl} from '../app/api/api'
 export default function EditTopicForm({id, title, description}) {
     const [newTitle, setNewTitle]=useState(title)
     const [newDescription, setNewDescription]=useState(description)
@@ -10,7 +11,7 @@ export default function EditTopicForm({id, title, description}) {
     const handleSubmit=async(e)=>{
         e.preventDefault()
         try{
-            const res=await fetch(`http://localhost:3000/api/topics/${id}`, {
+            const res=await fetch(`${apiUrl}/topics/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

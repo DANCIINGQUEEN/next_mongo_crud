@@ -2,10 +2,11 @@ import RemoveBtn from "./RemoveBtn";
 import Link from "next/link";
 import { HiPencilAlt } from "react-icons/hi";
 import styles from "./components.module.css";
+import {apiUrl} from "../app/api/api";
 
 const getTopics = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/topics", {
+    const res = await fetch(`${apiUrl}/topics`, {
       cache: "no-store",
     });
     if (!res.ok) {

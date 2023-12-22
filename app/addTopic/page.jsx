@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./addTopic.module.css";
+import {apiUrl} from "../api/api";
 export default function AddTopic() {
 
   const [title, setTitle] = useState("");
@@ -15,7 +16,7 @@ export default function AddTopic() {
         return
     }
     try{
-        const res = await fetch('http://localhost:3000/api/topics', {
+        const res = await fetch(`${apiUrl}/topics`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -24,6 +25,7 @@ export default function AddTopic() {
         })    
         if(res.ok){
             router.push('/')
+            router.refresh()
         }else{
             throw new Error('Failed to add topic')
         }

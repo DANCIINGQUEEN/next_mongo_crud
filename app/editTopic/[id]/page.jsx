@@ -1,9 +1,10 @@
 import EditTopicForm from "@/components/EditTopicForm";
 import { get } from "mongoose";
+import {apiUrl} from "../../api/api";
 
 const getTopicById=async(id)=>{
     try{
-        const res=await fetch(`http://localhost:3000/api/topics/${id}`,{
+        const res=await fetch(`${apiUrl}/topics/${id}`,{
             cache: 'no-store'
         })
         if(!res.ok){
