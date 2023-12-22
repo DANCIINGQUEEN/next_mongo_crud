@@ -28,7 +28,7 @@ export default async function TopicsList() {
             <div>{topic.description}</div>
           </div>
           <div>
-            <RemoveBtn />
+            <RemoveBtn id={topic._id}/>
             <Link href={`/editTopic/${topic._id}`} className={styles.button}>
               <HiPencilAlt size={24} />
             </Link>
