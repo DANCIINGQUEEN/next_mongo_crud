@@ -1,0 +1,84 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E293B;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+.add{
+    color:black;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    text-decoration: none;
+
+}
+.home{
+    color:white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.topicContainer{
+    padding: 1rem;
+    border: 1px solid #CBD5E0;
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+   
+}
+.topicTitle{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.button{
+    color:black;
+    background-color: white;
+    
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.deleteButton{
+    color:red;
+    background-color: white;
+    
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 3;
+}
+
+.editInput {
+    border: 1px solid #6b7280;
+    padding: 8px;
+    margin-top: 8px;
+}
+.editButton{
+    background-color: #34d399;
+    font-weight: bold;
+    color: white;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: fit-content;
+    border:none;
+    margin-top:8px;
+}

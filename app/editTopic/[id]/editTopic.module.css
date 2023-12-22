@@ -1,0 +1,23 @@
+.addForm {
+    display: flex;
+    flex-direction: column;
+    gap: 3;
+}
+
+.addInput {
+    border: 1px solid #6b7280;
+    padding: 8px;
+    margin-top: 8px;
+}
+.addButton{
+    background-color: #34d399;
+    font-weight: bold;
+    color: white;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: fit-content;
+    border:none;
+    margin-top:8px;
+}
