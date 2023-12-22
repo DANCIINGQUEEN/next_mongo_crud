@@ -22,7 +22,7 @@ export default async function TopicsList() {
   return (
     <>
       {topics.map(topic => (
-        <div className={styles.topicContainer}>
+        <div className={styles.topicContainer} key={topic._id}>
           <div>
             <div className={styles.topicTitle}>{topic.title}</div>
             <div>{topic.description}</div>
