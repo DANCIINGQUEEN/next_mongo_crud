@@ -8,9 +8,9 @@ export async function PUT(req,{params}){
     await connectMongoDB()
     await Topic.findByIdAndUpdate(id,{title, description})
     return NextResponse.json({message:"Topic updated successfully"},{ status:200})
-}
+}   
 
-export async function GET(req,{params}){
+export async function GET({params}){
     const {id}=params
     await connectMongoDB()
     const topic=await Topic.findOne({_id:id})
